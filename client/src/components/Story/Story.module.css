@@ -1,0 +1,30 @@
+.story {
+  margin: auto;
+  background: #e9d3d3;
+  width: 19rem;
+  height: 30rem;
+  border-radius: 1rem;
+  position: relative;
+  margin: 1.2rem;
+}
+
+.story_desc {
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .story {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .story {
+    width: 85%;
+    height: 30rem;
+  }
+
+}

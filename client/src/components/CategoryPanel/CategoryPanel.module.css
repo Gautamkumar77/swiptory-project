@@ -1,0 +1,56 @@
+.panel {
+  padding: 2rem;
+  display: flex;
+  height: fit-content;
+  font-family: 'DM sans';
+  font-size: large;
+}
+
+.categoryContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.card {
+  width: 18rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition: box-shadow 200ms , background-size 2s;
+}
+
+.card span{
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  box-shadow: 0px 0px 15px 20px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.2);
+  background-size: 150%;
+}
+
+@media only screen  and (max-width: 860px){
+  .panel{
+    background: transparent;
+    overflow: auto;
+    font-size: medium;
+  }
+
+  .categoryContainer{
+    width: auto;
+  }
+
+  .card{
+    max-width: 8rem;
+    max-height: 4rem;
+  }
+}
